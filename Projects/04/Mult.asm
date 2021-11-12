@@ -29,12 +29,15 @@
 
 
 (LOOP)
+    @R2
+    M=0         //reset R2
+
     @i
     D=M
     @n
     D=D-M
     @STOP
-    D; JEQ      //if i==n, goto END
+    D; JEQ      //if i==n, goto STOP
 
     @sum
     D=M             
